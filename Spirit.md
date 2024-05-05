@@ -10,7 +10,7 @@ When this is reduced to $0$, the other player wins.
 
 ## Phases
 
-Each player will start in their inital phase.
+Each player will start in their initial phase.
 
 They may advance a phase by playing a card that allows them to.
 These cards may _only_ allow for _forward_ movements.
@@ -67,10 +67,10 @@ Spells will be activated immediately after being deployed.
 All cards with a health value will start out with that amount of health.
 This will be signaled by an amount of health cubes on the card.
 
-Damaging a card will remove an amount of heath cubes from it,
+Damaging a card will remove an amount of health cubes from it,
 while healing adds them.
 
-If a card's health drops below 0, it dies. This happens immediately.
+If a card's health drops below 0, it dies. This happens immediately, unless the contrary is specified.
 
 A card may be healed until above its maximum health,
 unless the contrary is specified.

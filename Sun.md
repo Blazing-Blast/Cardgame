@@ -14,7 +14,7 @@ and generally become more powerful.
 
 The continuation of life.
 In this one, she may now activate her creatures.
-They finaly become useful, and fullfil their purpose.
+They finally become useful, and fulfil their purpose.
 
 ### Dusk
 
@@ -60,7 +60,7 @@ When activated: Attack one ally for `Damage`.
 Because it is negative, it will heal.
 This _cannot_ heal `Sun` herself.
 
-#### Urayuli
+#### Uræulí
 
 | Key            | Value         |
 | -------------- | ------------- |
@@ -83,7 +83,7 @@ When maneuvered: Move one space orthogonally. Exhaust.
 | Active phase | Noon + Dusk |
 
 When activated: Choose one allied card.
-They will be immune to the first $2$ damage that they will be dealt, this turn.
+They will be immune to the first $2$ damage that they will be dealt, until `Sun`'s next turn.
 
 ### Structures
 
@@ -97,22 +97,22 @@ They will be immune to the first $2$ damage that they will be dealt, this turn.
 Passively heal all allies in a straight line from the Sanctuary for $1$.
 This cannot heal above the maximum health of the card.
 
-These enemies are determined by casting a ray from the Sactuary.
+These allies are determined by casting a ray from the Sactuary.
 The ray only stops when an enemy card is found.
 Every card in the ray (except the enemy at the end), will be healed.
 
 #### Catapult
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $2$   |
-| Damage       | $2$   |
-| Summon phase | Dawn  |
-| Active phase | Noon  |
+| Key          | Value       |
+| ------------ | ----------- |
+| Health       | $2$         |
+| Damage       | $2$         |
+| Summon phase | Dawn        |
+| Active phase | Noon + Dusk |
 
 ##### When activated
 
-Take the allied card in the defensive position of the Catapunt's lane.
+Take the allied card in the defensive position of the Catapult's lane.
 It is now called the `Ammo`
 Launch the `Ammo` to any position in the opposing lane.
 
@@ -182,7 +182,7 @@ Ejects `Coronal Mass` in an unoccupied position in a lane of your choice.
 | ------------ | ----------- |
 | Active phase | Noon + Dusk |
 
-Pick a lane. All creatures in that lane, starti`ng at the opponent's offensive position,
+Pick a lane pair. All creatures in that lane pair, starting at the opponent's offensive position,
 will be pushed one position towards the opponent,
 but only if there is a free space for them to move into.
 

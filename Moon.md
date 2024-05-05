@@ -11,13 +11,13 @@ During this phase he can tag enemy creatures and buildings for destruction.
 
 ### Plenilune
 
-the peak of his power.
+The peak of his power.
 Now is his moment to dish out damage to tagged enemies.
 
 ### Waning
 
-Now, is the time for resoration.
-The tagged enemies that survived, will heal `1` hitpoint.
+Now, is the time for restoration.
+The tagged enemies that survived, will heal $1$ hitpoint.
 
 ## Cards
 
@@ -32,10 +32,10 @@ The tagged enemies that survived, will heal `1` hitpoint.
 | Summon phase | Waxing + Plenilune |
 | Active phase | Waxing + Waning    |
 
-The spy is hidden (unable to be targeted by the enemy),
+The Spy is hidden (unable to be targeted by the enemy),
 until he performs his first attack.
 
-The spy can only attack during scheme.
+The Spy can only attack during `Active Phase`.
 
 ### Structures
 
