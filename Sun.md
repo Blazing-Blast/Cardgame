@@ -26,7 +26,7 @@ During this phase she will be at her most vulnerable.
 
 ### Creatures
 
-#### Wanderer
+#### Voyager
 
 | Key          | Value      |
 | ------------ | ---------- |
@@ -41,13 +41,13 @@ When activated: Attack one opponent for `Damage`.
 When maneuvered: Move in the default manner, without becoming exhausted.
 This is only allowed once per turn.
 
-The Wanderer must move to another tile, each turn.
-Otherwise, they will take $1$ damage.
-They may move by maneuvering, with spells, or via any other manner;
-as long as they end the turn in a different position than last turn.
-This means that they do not need to move on their first turn.
+The Voyager must move to another tile, each turn.
+Otherwise, it will take $1$ damage.
+It may move by maneuvering, with spells, or via any other manner;
+as long as it ends the turn in a different position than last turn.
+This means that the Voyager does not need to move on its first turn.
 
-#### Healer
+#### Helioler
 
 | Key          | Value |
 | ------------ | ----- |
@@ -57,10 +57,10 @@ This means that they do not need to move on their first turn.
 | Active phase | Noon  |
 
 When activated: Attack one ally for `Damage`.
-Because it is negative, it will heal.
+Because it is negative, this will heal.
 This _cannot_ heal `Sun` herself.
 
-#### Uræulí
+#### Red Giant
 
 | Key            | Value         |
 | -------------- | ------------- |
@@ -73,35 +73,46 @@ This _cannot_ heal `Sun` herself.
 
 When maneuvered: Move one space orthogonally. Exhaust.
 
-#### Guardian
-
-| Key          | Value       |
-| ------------ | ----------- |
-| Health       | $3$         |
-| Attack       | $1$         |
-| Summon phase | Dawn        |
-| Active phase | Noon + Dusk |
-
-When activated: Choose one allied card.
-They will be immune to the first $2$ damage that they will be dealt, until `Sun`'s next turn.
-
-### Structures
-
-#### Sanctuary
+#### Defender of the Corona
 
 | Key          | Value |
 | ------------ | ----- |
 | Health       | $3$   |
+| Attack       | $1$   |
+| Shielding    | $2$   |
+| Summon phase | Dawn  |
+| Attack phase | All   |
+| Shield phase | Noon  |
+
+When activated: Either attack or shield. The Defender can only shield during Noon.
+
+When shielding: Choose one allied card.
+It will made immune to the first $2$ damage that it will be dealt.
+At the start of `Sun`'s next turn, this will be reduced back to $0$.
+This exhausts the Defender.
+
+When attacking: Follow the default behaivour.
+
+### Structures
+
+#### Ray of Life
+
+| Key          | Value |
+| ------------ | ----- |
+| Health       | $3$   |
+| Damage       | $-1$  |
 | Summon phase | Dawn  |
 
-Passively heal all allies in a straight line from the Sanctuary for $1$.
-This cannot heal above the maximum health of the card.
+Hit all allies in a straight line in the lane the Ray of Life for `Damage`.
+Since this is negative, it will result in an increase of health.
+This cannot heal above the maximum health of the cards.
 
-These allies are determined by casting a ray from the Sactuary.
+These allies are determined by casting a ray,
+from the postion of the structure, to the opposing side.
 The ray only stops when an enemy card is found.
 Every card in the ray (except the enemy at the end), will be healed.
 
-#### Catapult
+#### Gravity Assister
 
 | Key          | Value       |
 | ------------ | ----------- |
@@ -112,19 +123,21 @@ Every card in the ray (except the enemy at the end), will be healed.
 
 ##### When activated
 
-Take the allied card in the defensive position of the Catapult's lane.
+Take the allied card in the defensive position of the Gravity Assister's lane.
 It is now called the `Ammo`
-Launch the `Ammo` to any position in the opposing lane.
+The `Ammo` will now perform a Gravity Assist
+towards a position of your choice in the opposing lane.
 
 If there is another card there, it takes `Damage` damage.
 This card is now called the `Target`.
 
-And, if it survives, it gets knocked back to any of the empty spaces next to it
-(the `Target`'s' owner's choice).
+And, if it survives, the `Target` gets knocked back to any of the empty spaces next to it
+(`Target`'s' owner's choice).
 If there are no empty spaces, the cards trade blows, until one dies,
 starting with the `Target`.
 
-This exhausts the `Ammo`, `Target`, and Catapult.
+This exhausts the `Ammo`, and Gravity Assister itself.
+If `Target` engaged in combat, it is exhaused, too.
 
 #### Suspiciously Wall-shaped Pillar or Light
 
@@ -137,7 +150,7 @@ This exhausts the `Ammo`, `Target`, and Catapult.
 When damaged: reduced damage recieved by `Defence`.
 Damage cannot be reduced below $0$.
 
-#### Ray of Power
+#### Mutagenic Ion Beam
 
 | Key          | Value       |
 | ------------ | ----------- |
@@ -145,8 +158,10 @@ Damage cannot be reduced below $0$.
 | Summon phase | Dawn        |
 | Active phase | Dawn + Noon |
 
-When activated: Choose one allied card.
-Its attack will be boosted by $1$, until a new target is chosen, or the Beacon is destroyed.
+At the start of your turn, pick a `Target`.
+The `Target` will be hit by the Mutagenic Ion Beam, and mutate so that
+its attack will be boosted by $1$.
+This lasts as long as `Target` is the target of the Beam, and the Beam lives.
 
 ### Spells
 
@@ -157,7 +172,8 @@ Its attack will be boosted by $1$, until a new target is chosen, or the Beacon i
 | Phase         | Noon    |
 | Friendly fire | Enabled |
 
-Deal $1$ indiscriminate damage to all cards within two adjacent lanes.
+Deal $1$ indiscriminate damage to all cards
+within two adjacent or opposing lanes of your choice.
 
 #### Coronal Mass Ejection
 
@@ -174,7 +190,7 @@ Deal $1$ indiscriminate damage to all cards within two adjacent lanes.
 | Attack       | $1$   |
 | Active phase | All   |
 
-Ejects `Coronal Mass` in an unoccupied position in a lane of your choice.
+Ejects `Coronal Mass` in an unoccupied location of your choice.
 
 #### Solar Wind
 
@@ -186,7 +202,7 @@ Pick a lane pair. All creatures in that lane pair, starting at the opponent's of
 will be pushed one position towards the opponent,
 but only if there is a free space for them to move into.
 
-#### Virility Beam
+#### Light of (Re)creation
 
 | Key          | Value |
 | ------------ | ----- |

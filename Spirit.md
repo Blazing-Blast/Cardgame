@@ -1,12 +1,17 @@
 # The idea behind Celestials (name WIP)
 
+Note that any rules regarding card behaviour outlined here
+may be overwritten by the cards and phases themselves.
+This will be explicitly mentioned.
+
 ## Players
 
 There are two playable characters: `Sun` and `Moon`.
 Each charater has their own theme and with that, deck, playstyle, and turn structure.
 
-They also start out with $20$ health.
-When this is reduced to $0$, the other player wins.
+They also start out with $20$ health and 5 cards in their hand.
+
+When a player's health is reduced to $0$, the other player wins.
 
 ## Phases
 
@@ -27,8 +32,8 @@ Phases will follow the general structure of
 
 Each turn follows the following structure:
 
-1. Draw a card.
-2. Play cards annotated with the active phase.
+1. Draw a card. (Max 5)
+2. Play, activate, and maneuver cards who's requirements are met.
 3. Play an `Advance Phase` card.
 4. Discard and draw a card.
 
@@ -44,8 +49,11 @@ There are different card types:
 
 During the player's `Damage` phase, their deployed card may be activated
 as long as it is not exhaused.
+
 What this entails will be specified on the card.
-Usually this will be along the lines of: "Perform `ACTION` when `CONDITION` is met."
+If it is not specfied, the card may damage any orthogonally neighbouring card for their `Damage` stat.
+
+Being activated always exhausts the card, unless the contrary is specified.
 
 ### Creatures
 
@@ -62,6 +70,33 @@ Structures may only be positioned in the back of a lane.
 
 Spells will be activated immediately after being deployed.
 
+## Card Piles
+
+Each deck contains 5 `Advance Phase` cards,
+and two copies of each card in their `PlayerName.md` file.
+
+The are three card piles:
+
+- Draw pile
+- Discard pile
+- Graveyard
+
+At the start of the game, the entire deck is shuffeled, and placed onto the draw pile.
+
+When a card is discarded, it moves to the discard pile.
+
+When a card's health drops to $0$, it is moved to the graveyard.
+
+When a player's draw pile is empty, they can no longer draw cards.
+
+When both draw piles are emptied,
+the players may decide to shuffle their discard piles into their draw piles.
+They must both agree to this.
+The decision must be made right after the last card is drawn.
+It is final.
+
+Note that cards in the graveyard, stay in the graveyard, during this process.
+
 ## Health
 
 All cards with a health value will start out with that amount of health.
@@ -77,8 +112,8 @@ unless the contrary is specified.
 
 ## Board
 
-The board is made up of $4$ sets of lanes.
-Each lane has $2 \cdot 3 = 6$ locations:
+The board is made up of $4$ pairs of lanes.
+Each lane pair has $2 \cdot 3 = 6$ locations:
 
 1. Structure
 2. Defence
@@ -88,16 +123,19 @@ This makes the board look like:
 
 | Lane / position | 0           | 1         | 2         | 3         | 4         | 5           |
 | --------------- | ----------- | --------- | --------- | --------- | --------- | ----------- |
-| A               | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
-| B               | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
-| C               | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
-| D               | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
+| A1 + A2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
+| B1 + B2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
+| C1 + C2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
+| D1 + D2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
 
-By default, a card can only attack cards orthagonally adjacent (`Range`).
+By default, a card can only attack cards orthagonally adjacent. (`Range`)
+
 A creature in the opponent's defending position,
 in a lane that does not have a structure,
 may choose to attack their opponent directly.
 
-Creatures can, by default, only maneuver orthogonally,
-or, if they are in friendly territory,
-they may move to any lane, without changing their position within the lane (`Movement`).
+Creatures can, by default, only maneuver orthogonally
+Or, if they are in friendly territory,
+they may move to any lane, without changing their position within the lane. (`Movement`)
+
+Creatures may not maneuver to occupied locations.
