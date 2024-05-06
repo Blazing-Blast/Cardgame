@@ -126,7 +126,8 @@ Every card in the ray (except the enemy at the end), will be healed.
 Take the allied card in the defensive position of the Gravity Assister's lane. It may be exhausted.
 It is now called the `Ammo`.
 The `Ammo` will now perform a Gravity Assist
-towards a position of your choice in the opposing lane.
+towards a offensive position of your choice
+in the Gravityy Assister's lane.
 
 If there is another card there, it takes `Damage` damage.
 This card is now called the `Target`.
