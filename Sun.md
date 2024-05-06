@@ -56,7 +56,7 @@ This means that the Voyager does not need to move on its first turn.
 | Summon phase | Dawn  |
 | Active phase | Noon  |
 
-When activated: Attack one ally for `Damage`.
+When activated: Attack one card for `Damage`. This may not be itself.
 Because it is negative, this will heal.
 This _cannot_ heal `Sun` herself.
 
@@ -123,21 +123,20 @@ Every card in the ray (except the enemy at the end), will be healed.
 
 ##### When activated
 
-Take the allied card in the defensive position of the Gravity Assister's lane.
-It is now called the `Ammo`
+Take the allied card in the defensive position of the Gravity Assister's lane. It may be exhausted.
+It is now called the `Ammo`.
 The `Ammo` will now perform a Gravity Assist
 towards a position of your choice in the opposing lane.
 
 If there is another card there, it takes `Damage` damage.
 This card is now called the `Target`.
 
-And, if it survives, the `Target` gets knocked back to any of the empty spaces next to it
-(`Target`'s' owner's choice).
-If there are no empty spaces, the cards trade blows, until one dies,
-starting with the `Target`.
+The cards trade blows, until one dies.
+`Target` gets one free hit if it is not exhausted.
+`Target` gets another one if `Ammo` is exhausted.
+After these hits, `Ammo` starts trading blows.
 
-This exhausts the `Ammo`, and Gravity Assister itself.
-If `Target` engaged in combat, it is exhaused, too.
+This exhausts the `Ammo`, `Target`, and Gravity Assister itself.
 
 #### Suspiciously Wall-shaped Pillar or Light
 

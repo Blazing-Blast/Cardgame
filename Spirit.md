@@ -72,7 +72,7 @@ Spells will be activated immediately after being deployed.
 
 ## Card Piles
 
-Each deck contains 5 `Advance Phase` cards,
+Each deck contains 3 `Advance Phase` cards,
 and two copies of each card in their `PlayerName.md` file.
 
 The are three card piles:
@@ -85,9 +85,7 @@ At the start of the game, the entire deck is shuffeled, and placed onto the draw
 
 When a card is discarded, it moves to the discard pile.
 
-When a card's health drops to $0$, it is moved to the graveyard.
-
-When a player's draw pile is empty, they can no longer draw cards.
+When a card's health drops to $0$ or it is a played spell, it is moved to the graveyard.
 
 When both draw piles are emptied,
 the players may decide to shuffle their discard piles into their draw piles.
@@ -97,10 +95,15 @@ It is final.
 
 Note that cards in the graveyard, stay in the graveyard, during this process.
 
+When a player's draw and discard pile is empty, they can no longer draw cards.
+
 ## Health
 
 All cards with a health value will start out with that amount of health.
 This will be signaled by an amount of health cubes on the card.
+
+There are red health cubes (worth 1),
+and green ones, with a value of 5.
 
 Damaging a card will remove an amount of health cubes from it,
 while healing adds them.
