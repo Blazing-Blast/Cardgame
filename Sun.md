@@ -56,9 +56,9 @@ This means that the Voyager does not need to move on its first turn.
 | Summon phase | Dawn  |
 | Active phase | Noon  |
 
-When activated: Attack one card for `Damage`. This may not be itself.
+When activated: Attack one card for `Damage`.
 Because it is negative, this will heal.
-This _cannot_ heal `Sun` herself.
+This _cannot_ heal `Sun` herself, nor the Helioler itself.
 
 #### Red Giant
 
@@ -91,7 +91,7 @@ It will made immune to the first $2$ damage that it will be dealt.
 At the start of `Sun`'s next turn, this will be reduced back to $0$.
 This exhausts the Defender.
 
-When attacking: Follow the default behaivour.
+When attacking: Follow the default behavior.
 
 ### Structures
 
@@ -108,7 +108,7 @@ Since this is negative, it will result in an increase of health.
 This cannot heal above the maximum health of the cards.
 
 These allies are determined by casting a ray,
-from the postion of the structure, to the opposing side.
+from the position of the structure, to the opposing side.
 The ray only stops when an enemy card is found.
 Every card in the ray (except the enemy at the end), will be healed.
 
@@ -127,7 +127,7 @@ Take the allied card in the defensive position of the Gravity Assister's lane. I
 It is now called the `Ammo`.
 The `Ammo` will now perform a Gravity Assist
 towards a offensive position of your choice
-in the Gravityy Assister's lane.
+in the Gravity Assister's lane.
 
 If there is another card there, it takes `Damage` damage.
 This card is now called the `Target`.
@@ -147,7 +147,7 @@ This exhausts the `Ammo`, `Target`, and Gravity Assister itself.
 | Defence      | $1$   |
 | Summon phase | Dawn  |
 
-When damaged: reduced damage recieved by `Defence`.
+When damaged: reduced damage received by `Defence`.
 Damage cannot be reduced below $0$.
 
 #### Mutagenic Ion Beam
@@ -174,6 +174,8 @@ This lasts as long as `Target` is the target of the Beam, and the Beam lives.
 
 Deal $1$ indiscriminate damage to all cards
 within two adjacent or opposing lanes of your choice.
+
+Ignores defence.
 
 #### Coronal Mass Ejection
 

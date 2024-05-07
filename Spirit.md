@@ -1,13 +1,13 @@
 # The idea behind Celestials (name WIP)
 
-Note that any rules regarding card behaviour outlined here
+Note that any rules regarding card behavior outlined here
 may be overwritten by the cards and phases themselves.
 This will be explicitly mentioned.
 
 ## Players
 
 There are two playable characters: `Sun` and `Moon`.
-Each charater has their own theme and with that, deck, playstyle, and turn structure.
+Each character has their own theme and with that, deck, playstyle, and turn structure.
 
 They also start out with $20$ health and 5 cards in their hand.
 
@@ -17,10 +17,8 @@ When a player's health is reduced to $0$, the other player wins.
 
 Each player will start in their initial phase.
 
-They may advance a phase by playing a card that allows them to.
-These cards may _only_ allow for _forward_ movements.
-Playing one of these cards will end your turn.
-Trying to advance from the final phase, will result in looping back to the inital phase.
+They may advance their phase forwards at any time.
+Trying to advance from the final phase, will result in looping back to the initial phase.
 
 Phases will follow the general structure of
 
@@ -32,9 +30,9 @@ Phases will follow the general structure of
 
 Each turn follows the following structure:
 
-1. Draw a card. (Max 5)
-2. Play, activate, and maneuver cards who's requirements are met.
-3. Play an `Advance Phase` card.
+1. Advance your phase.
+2. Draw one card. (Up to $5$)
+3. Play, activate, and maneuver cards who's requirements are met.
 4. Discard and draw a card.
 
 Each step is optional.
@@ -47,11 +45,11 @@ There are different card types:
 - Structures
 - Spells
 
-During the player's `Damage` phase, their deployed card may be activated
-as long as it is not exhaused.
+During the player's second phase, their deployed card may be activated
+as long as it is not exhausted.
 
 What this entails will be specified on the card.
-If it is not specfied, the card may damage any orthogonally neighbouring card for their `Damage` stat.
+If it is not specified, the card may damage any orthogonally neighbouring card for their `Damage` stat.
 
 Being activated always exhausts the card, unless the contrary is specified.
 
@@ -72,8 +70,7 @@ Spells will be activated immediately after being deployed.
 
 ## Card Piles
 
-Each deck contains 3 `Advance Phase` cards,
-and two copies of each card in their `PlayerName.md` file.
+Each deck two copies of each card in their `PlayerName.md` file.
 
 The are three card piles:
 
@@ -81,7 +78,7 @@ The are three card piles:
 - Discard pile
 - Graveyard
 
-At the start of the game, the entire deck is shuffeled, and placed onto the draw pile.
+At the start of the game, the entire deck is shuffled, and placed onto the draw pile.
 
 When a card is discarded, it moves to the discard pile.
 
@@ -131,7 +128,7 @@ This makes the board look like:
 | C1 + C2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
 | D1 + D2         | Structure 1 | Defence 1 | Offence 1 | Offence 2 | Defence 2 | Structure 2 |
 
-By default, a card can only attack cards orthagonally adjacent. (`Range`)
+By default, a card can only attack cards orthogonally adjacent. (`Range`)
 
 A creature in the opponent's defending position,
 in a lane that does not have a structure,
