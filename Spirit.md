@@ -134,8 +134,6 @@ A creature in the opponent's defending position,
 in a lane that does not have a structure,
 may choose to attack their opponent directly.
 
-Creatures can, by default, only maneuver orthogonally
-Or, if they are in friendly territory,
-they may move to any lane, without changing their position within the lane. (`Movement`)
-
-Creatures may not maneuver to occupied locations.
+Creatures can, by default, only maneuver orthogonally.
+This exhausts them.
+Creatures may not maneuver to occupied locations. (`Movement`)

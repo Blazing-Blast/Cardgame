@@ -30,6 +30,7 @@ During this phase she will be at her most vulnerable.
 
 | Key          | Value      |
 | ------------ | ---------- |
+| Type         | Creature   |
 | Health       | $3$        |
 | Attack       | $1$        |
 | Movement     | no-exhaust |
@@ -49,12 +50,13 @@ This means that the Voyager does not need to move on its first turn.
 
 #### Helioler
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $2$   |
-| Attack       | $-1$  |
-| Summon phase | Dawn  |
-| Active phase | Noon  |
+| Key          | Value    |
+| ------------ | -------- |
+| Type         | Creature |
+| Health       | $2$      |
+| Attack       | $-1$     |
+| Summon phase | Dawn     |
+| Active phase | Noon     |
 
 When activated: Attack one card for `Damage`.
 Because it is negative, this will heal.
@@ -62,27 +64,26 @@ This _cannot_ heal `Sun` herself, nor the Helioler itself.
 
 #### Red Giant
 
-| Key            | Value         |
-| -------------- | ------------- |
-| Health         | $7$           |
-| Attack         | $7$           |
-| Movement       | No multi-lane |
-| Movement phase | Dawn + Dusk   |
-| Summon phase   | Dawn          |
-| Active phase   | Noon          |
-
-When maneuvered: Move one space orthogonally. Exhaust.
+| Key            | Value       |
+| -------------- | ----------- |
+| Type           | Creature    |
+| Health         | $7$         |
+| Attack         | $7$         |
+| Movement phase | Dawn + Dusk |
+| Summon phase   | Dawn        |
+| Active phase   | Noon        |
 
 #### Defender of the Corona
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $3$   |
-| Attack       | $1$   |
-| Shielding    | $2$   |
-| Summon phase | Dawn  |
-| Attack phase | All   |
-| Shield phase | Noon  |
+| Key          | Value    |
+| ------------ | -------- |
+| Type         | Creature |
+| Health       | $3$      |
+| Attack       | $1$      |
+| Shielding    | $2$      |
+| Summon phase | Dawn     |
+| Attack phase | All      |
+| Shield phase | Noon     |
 
 When activated: Either attack or shield. The Defender can only shield during Noon.
 
@@ -97,11 +98,12 @@ When attacking: Follow the default behavior.
 
 #### Ray of Life
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $3$   |
-| Damage       | $-1$  |
-| Summon phase | Dawn  |
+| Key          | Value     |
+| ------------ | --------- |
+| Type         | Structure |
+| Health       | $3$       |
+| Damage       | $-1$      |
+| Summon phase | Dawn      |
 
 Hit all allies in a straight line in the lane the Ray of Life for `Damage`.
 Since this is negative, it will result in an increase of health.
@@ -116,6 +118,7 @@ Every card in the ray (except the enemy at the end), will be healed.
 
 | Key          | Value       |
 | ------------ | ----------- |
+| Type         | Structure   |
 | Health       | $2$         |
 | Damage       | $2$         |
 | Summon phase | Dawn        |
@@ -123,7 +126,8 @@ Every card in the ray (except the enemy at the end), will be healed.
 
 ##### When activated
 
-Take the allied card in the defensive position of the Gravity Assister's lane. It may be exhausted.
+Take the card in the defensive position of the Gravity Assister's lane.
+It may be exhausted.
 It is now called the `Ammo`.
 The `Ammo` will now perform a Gravity Assist
 towards a offensive position of your choice
@@ -141,11 +145,12 @@ This exhausts the `Ammo`, `Target`, and Gravity Assister itself.
 
 #### Suspiciously Wall-shaped Pillar or Light
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $5$   |
-| Defence      | $1$   |
-| Summon phase | Dawn  |
+| Key          | Value     |
+| ------------ | --------- |
+| Type         | Structure |
+| Health       | $5$       |
+| Defence      | $1$       |
+| Summon phase | Dawn      |
 
 When damaged: reduced damage received by `Defence`.
 Damage cannot be reduced below $0$.
@@ -154,6 +159,7 @@ Damage cannot be reduced below $0$.
 
 | Key          | Value       |
 | ------------ | ----------- |
+| Type         | Structure   |
 | Health       | $3$         |
 | Summon phase | Dawn        |
 | Active phase | Dawn + Noon |
@@ -169,6 +175,7 @@ This lasts as long as `Target` is the target of the Beam, and the Beam lives.
 
 | Key           | Value   |
 | ------------- | ------- |
+| Type          | Spell   |
 | Phase         | Noon    |
 | Friendly fire | Enabled |
 
@@ -181,26 +188,30 @@ Ignores defence.
 
 | Key          | Value |
 | ------------ | ----- |
+| Type         | Spell |
 | Summon phase | All   |
 | Active phase | All   |
 
+Ejects `Coronal Mass` in an unoccupied location of your choice.
+
 ##### Coronal Mass
 
-| Key          | Value |
-| ------------ | ----- |
-| Health       | $2$   |
-| Attack       | $1$   |
-| Active phase | All   |
-
-Ejects `Coronal Mass` in an unoccupied location of your choice.
+| Key          | Value    |
+| ------------ | -------- |
+| Type         | Creature |
+| Health       | $2$      |
+| Attack       | $1$      |
+| Active phase | All      |
 
 #### Solar Wind
 
 | Key          | Value       |
 | ------------ | ----------- |
+| Type         | Spell       |
 | Active phase | Noon + Dusk |
 
-Pick a lane pair. All creatures in that lane pair, starting at the opponent's offensive position,
+Pick a lane pair.
+All creatures in that lane pair, starting at the opponent's offensive position,
 will be pushed one position towards the opponent,
 but only if there is a free space for them to move into.
 
@@ -208,6 +219,7 @@ but only if there is a free space for them to move into.
 
 | Key          | Value |
 | ------------ | ----- |
+| Type         | Spell |
 | Active phase | Dawn  |
 
 Pick an opposing card. It is now called the `Original`.
