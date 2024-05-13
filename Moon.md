@@ -62,7 +62,7 @@ The Spy can only attack during `Active Phase`.
 When Blutsauger kills a creature: restore $1$ health.
 This may go above its maximum health.
 
-#### Rock Thrower
+#### Asteroid Lobber
 
 | Key          | Value              |
 | ------------ | ------------------ |
